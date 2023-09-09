@@ -1,0 +1,236 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/iconn-grid.css" rel="stylesheet" />
+<link href="~/css/form-contact.css" rel="stylesheet" />
+<style>
+  
+
+  
+
+
+        .containerr{
+            width:100%;
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+        }
+
+        iframe{
+            width:100%;
+            height:70% ;
+            
+        }
+
+    .logo-slider .slider-inner .logo-slide-img img {
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .logo-slider .slider-inner .logo-slide-img {
+        height: 100%;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .logo-slider {
+        position: absolute;
+        /*        top:30%;
+    */ left: 0%;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: #f7f7f7;
+    }
+
+    .slider-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        gap: 5px;
+        pointer-events: none;
+        transition: 0s ease-in;
+    }
+</style>
+
+<body>
+
+    <div class="common-section">
+        
+        <h1>Contact Us</h1>
+        <h2>FEEL FREE TO SEND US A MESSAGE NOW!</h2>
+        
+    </div>
+
+   
+    <div class="container">
+        <div class="slide-two">
+            <i class="fa-solid fa-phone"></i>
+            <div class="info">
+                <h3>Phone</h3>
+                <p class="text"> Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue. </p>
+                <p class="textbtn" >090-080-0760</p>
+            </div>
+        </div>
+
+        <div class="slide-two ">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="info">
+                <h3>Email</h3>
+                <p> Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate nec cursus augue. </p>
+                <p class="textbtn">info@company.com</p>
+            </div>
+        </div>
+
+        <div class="slide-two ">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="info">
+                <h3>Location </h3>
+                <p>
+                    1020 New Mountain Street
+                    Forest Park, FP 11220
+                </p>
+                <p class="textbtn"> View on Google Maps</p>
+            </div>
+        </div>
+    </div>
+       
+    	<div class="callback">
+        <div class="top">
+            <h1 class="aboutus-text">Send us a  <span> message </span> </h1>
+        <h3 class="aboutus-text-two">SUSPENDISSE A ANTE IN NEQUE IACULIS LACINIA</h3>
+        </div>
+		<form action="/Home/Index" method="post">
+			<div class="half">
+
+
+				<div class="item">
+					<input name="Name" type="text" id="name" placeholder="Full Name" />	
+				</div>
+
+
+				<div class="item">
+					<input name="Email" type="text" id="name" placeholder="E-Mail Address" />
+				</div>
+
+				<div class="item">
+					<input name="Subject" type="text" id="name" placeholder="Subject" />
+				</div>
+			</div>
+			<div class="textarea-design">
+				<div class="item">
+					<textarea name="Message" id="message" placeholder="Your Message"></textarea>
+				</div>
+			</div>
+			<div class="action">
+				<input type="submit" value=" Send Message" />
+			</div>
+
+        </form>
+    </div>
+  
+
+
+   <div class="containerr">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201550.3917781631!2d32.366398016049104!3d37.87842350751262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d08568d615f745%3A0x240dd0fc08060967!2sKonya!5e0!3m2!1str!2str!4v1679398128932!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+   </div>
+
+    <div class="logo-slider">
+        <div class="slider-inner">
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+            <div class="logo-slide-img">
+                <img src="/web/img/client-01.png" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    let slider = document.querySelector('.logo-slider');
+    let innerSlider = document.querySelector('.slider-inner');
+
+    let pressed = false;
+    let startx;
+    let x;
+
+    slider.addEventListener('mousedown', (e) => {
+        pressed = true;
+        startx = e.offsetX - innerSlider.offsetLeft;
+        slider.style.cursor = 'grabbing'
+    });
+
+    slider.addEventListener('mouseenter', () => {
+        slider.style.cursor = 'grab'
+    })
+
+    //slider.addEventListener('mouseleave', () => {
+    //    slider.style.cursor = 'default'
+    //});
+
+    slider.addEventListener('mouseup', () => {
+        slider.style.cursor = 'grab'
+    });
+
+    window.addEventListener('mouseup', () => {
+        pressed = false;
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!pressed) return;
+        e.preventDefault();
+
+        x = e.offsetX
+
+        innerSlider.style.left = `${x - startx}px`;
+
+        //checkboundary()
+    });
+
+    //function checkboundary(){
+    //    let outer=slider.getBoundingClientRect();
+    //    let inner= innerSlider.getBoundingClientRect();
+
+    //    if(parseInt(innerSlider.style.left)>0){
+    //        innerSlider.style.left='0px';
+    //        } else if (inner.right < outer.right) {
+    //            innerSlider.style.left=`-${inner.width-outer.width}px`
+    //        }
+    //}
+
+    //checkboundary()
+
+    // </script>

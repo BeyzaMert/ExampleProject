@@ -1,0 +1,24 @@
+﻿.common-section {
+    background-image: url(/web/img/page-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 12% 0%;
+    color: #fff;
+    margin-bottom:10%;
+}
+
+    .common-section h1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+        font-size: 55px;
+        font-weight: 700;
+    }
+
+    .common-section h2 {
+        display: flex;
+        justify-content: center;
+      
+    }

@@ -1,0 +1,226 @@
+﻿@media only screen and (max-width:5000px) {
+
+    .bg-animationcontainer {
+        height: 75vh;
+    }
+
+        .bg-animationcontainer .bg-container .grid-container {
+            grid-template-columns: 150% 150%;
+            height: 30%;
+            grid-column-gap: 10%;
+            margin-left: 35%;
+            margin-top: 0%;
+        }
+
+        .bg-animationcontainer .bg-container .short-title {
+            font-size: 35px;
+        }
+
+        .bg-animationcontainer .bg-container .long-title {
+            font-size: 45px;
+        }
+
+            .bg-animationcontainer .bg-container .long-title span {
+                font-size: 45px;
+            }
+
+        .bg-animationcontainer .bg-container .long-desc {
+            font-size: 35px;
+        }
+
+        .bg-animationcontainer .bg-container .short-desc {
+            font-size: 35px;
+        }
+
+
+        .bg-animationcontainer .bg-container a {
+            font-size: 35px;
+            padding: 1% 2%;
+        }
+
+        .bg-animationcontainer .bg-container .grid-container .box .col-sm .animation-count-title {
+            font-size: 35px;
+        }
+}
+
+@media only screen and (max-width:3000px) {
+
+    .bg-animationcontainer {
+        height: 70vh;
+    }
+
+        .bg-animationcontainer .bg-container .grid-container {
+            grid-template-columns: 85% 85%;
+            height: 25%;
+            grid-column-gap: 10%;
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+
+        .bg-animationcontainer .bg-container a {
+            font-size: 35px;
+            padding: 1% 1%;
+        }
+}
+
+@media only screen and (max-width:2500px) {
+
+    .bg-animationcontainer {
+        height: 70vh;
+    }
+
+        .bg-animationcontainer .bg-container .grid-container {
+            grid-template-columns: 65% 65%;
+            height: 22%;
+            grid-column-gap: 10%;
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+}
+
+@media only screen and (max-width:1320px) {
+    .bg-animationcontainer {
+        height: 43vh;
+    }
+
+        .bg-animationcontainer .bg-container {
+            margin-left: 4%;
+        }
+
+            .bg-animationcontainer .bg-container .grid-container {
+                grid-template-columns: 55% 55%;
+                height: 30%;
+                grid-column-gap: 10%;
+                margin-left: 45%;
+                margin-top: -2%;
+            }
+
+            .bg-animationcontainer .bg-container .short-title {
+                font-size: 20px;
+            }
+
+            .bg-animationcontainer .bg-container .long-title {
+                font-size: 30px;
+            }
+
+                .bg-animationcontainer .bg-container .long-title span {
+                    font-size: 30px;
+                }
+
+            .bg-animationcontainer .bg-container .long-desc {
+                font-size: 20px;
+            }
+
+            .bg-animationcontainer .bg-container .short-desc {
+                font-size: 20px;
+            }
+
+
+            .bg-animationcontainer .bg-container a {
+                font-size: 20px;
+                padding: 1% 1%;
+            }
+}
+
+@media only screen and (max-width:1110px) {
+
+    .bg-animationcontainer {
+        height: 35vh;
+    }
+
+        .bg-animationcontainer .bg-container .grid-container {
+            grid-template-columns: 45% 45%;
+            height: 22%;
+            grid-column-gap: 10%;
+            margin-left: 40%;
+            margin-top: 0%;
+        }
+}
+
+@media only screen and (max-width:900px) {
+
+    .bg-animationcontainer {
+        height: 30vh;
+    }
+
+        .bg-animationcontainer .bg-container .grid-container {
+            grid-template-columns: 45% 45%;
+            height: 22%;
+            grid-column-gap: 10%;
+            margin-left: 45%;
+            margin-top: 0%;
+        }
+
+        .bg-animationcontainer .bg-container .short-title {
+            font-size: 15px;
+        }
+
+        .bg-animationcontainer .bg-container .long-title {
+            font-size: 25px;
+        }
+
+            .bg-animationcontainer .bg-container .long-title span {
+                font-size: 25px;
+            }
+
+        .bg-animationcontainer .bg-container .long-desc {
+            font-size: 15px;
+        }
+
+        .bg-animationcontainer .bg-container .short-desc {
+            font-size: 15px;
+        }
+
+
+        .bg-animationcontainer .bg-container a {
+            font-size: 15px;
+            padding: 1% 1%;
+        }
+
+        .bg-animationcontainer .bg-container .grid-container .box .col-sm .animation-count-title {
+            font-size: 25px;
+        }
+}
+
+@media only screen and (max-width:600) {
+    .bg-animationcontainer {
+        height: 30vh;
+    }
+
+        .bg-animationcontainer .bg-container {
+        }
+
+            .bg-animationcontainer .bg-container .grid-container {
+                grid-template-columns: 55% 55%;
+                height: 30%;
+                grid-column-gap: 10%;
+                margin-left: 45%;
+                margin-top: -2%;
+            }
+
+            .bg-animationcontainer .bg-container .short-title {
+                font-size: 20px;
+            }
+
+            .bg-animationcontainer .bg-container .long-title {
+                font-size: 25px;
+            }
+
+                .bg-animationcontainer .bg-container .long-title span {
+                    font-size: 30px;
+                }
+
+            .bg-animationcontainer .bg-container .long-desc {
+                font-size: 20px;
+            }
+
+            .bg-animationcontainer .bg-container .short-desc {
+                font-size: 20px;
+            }
+
+
+            .bg-animationcontainer .bg-container a {
+                font-size: 20px;
+                padding: 1% 1%;
+            }
+}

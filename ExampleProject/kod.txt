@@ -1,0 +1,301 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<link href="~/font-awesome/css/all.css" rel="stylesheet" />
+	<link href="~/font-awesome/css/all.min.css" rel="stylesheet" />
+@*    <title></title>
+*@    <style>
+        * {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+        }
+
+        body{
+            font-family:''
+         
+        }
+
+        header{
+            height:100vh;
+            width:100vw;
+            background-image:url(/web/img/toplantiyedi.jpg);
+            background-size:cover;
+        }
+        .navbar{
+        position:absolute;
+        padding:10px;
+        display:flex;
+        justify-content:space-between;
+        width:90%;
+        box-sizing:border-box;
+        align-items:center;
+        }
+        .navbar a{
+            color:white;
+            font-size:20px;
+            font-weight:bold;
+            /*    content: '';
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: #e91e63;
+                height: 2px;
+                box-sizing: border-box;
+                width: 50px;*/
+        }
+        .navbar .website-names{
+            font-size:2em;
+            font-weight:bold;
+            margin-left:100px
+        }
+
+         
+        .navbar .nav-links ul {
+            display:flex;
+        }
+
+        .navbar .nav-links ul li {
+                margin: 30px 25px;
+        }
+
+        
+        .top-header{
+            background-color: #80DE38;
+            height:7vh;
+            color:white;
+        }
+        .top-header a{
+           margin:0px 100px;
+           color: white;
+            }
+        .icons{
+           /* padding:20px;
+            margin :0 300px;*/
+        }
+        .info{
+            padding:10px;
+            font-size:20px;
+            font-weight:bold;
+            justify-content:flex-end;
+           
+        }
+        .icons a{
+        }
+
+        .footer{
+            background-color:#24262b;
+        }
+        .container{
+            max-width:1170px;
+/*            background-color:red;
+*/            margin:auto;
+            padding: 70px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col{
+            width:25%;
+            padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size:30px;
+            color:white;
+            text-transform:capitalize;
+            margin-bottom:30px;
+            font-weight:700;
+            position:relative;
+        }
+/*        header için de bak çizgi
+*/        /*.footer-col h4:before{
+            content:'';
+            position:absolute;
+            left:0 ; 
+            bottom:-10px;
+            background-color:#e91e63;
+            height:2px;
+            box-sizing:border-box;
+            width:50px;
+        }*/
+      .footer-col ul li{
+          margin-bottom:20px;
+      }
+
+            .footer-col ul li a {
+                font-size:16px;
+                text-transform:capitalize;
+                color:white;
+                text-decoration:none;
+                font-weight:300;
+                color:#bbbbbb;
+                display:block;
+                transition:all 0.3s ease;
+            }
+
+            .footer-col ul li a:hover{
+             color:#fff;
+             padding-left:10px;
+             }
+
+            .footer-col ul p {
+                margin-bottom:20px;
+                text-transform: capitalize;
+                font-weight: 300;
+                color: #bbbbbb;
+            }
+            .footer-col ul a{
+                color:#fff;
+            }
+            .footer-col .social-links a{
+                display:inline-block;
+                height:40px;
+                width:40px;
+                background-color:white;
+                margin: 0 10px 10px 0;
+                border-radius:30px;
+                text-align:center;
+                line-height:40px;
+                color:black;
+            }
+            .icons{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            margin: 0 10px 10px 0;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 40px;
+            color: black;
+            }
+            input{
+                height:30px;
+                width:350px;
+                margin-bottom:15px;
+                border-radius:15px;
+                background-color:gray;
+            }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: white;
+            opacity: 1; 
+            text-indent:14px;
+            font-size:15px;
+            /* Firefox */}
+            button{
+                width:150px;
+                height:50px;
+                border-radius:15px;
+                background-color:mediumseagreen;
+                color:white;
+                font-size: 15px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+        <div class="top-header">
+            <div class="info">
+            <a ><i class="fa-regular fa-clock "></i>Mon-Fri 09:0-17.00</a>
+            <a><i class="fa-solid fa-phone"></i>090-080-0760</a>
+        </div>
+            <div class="icons ">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            
+        </div>
+
+    <nav class="navbar">
+
+        <a href="#" class="website-names">Finance Business</a>
+        <div class="nav-links">
+            <ul>
+                <li ><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">One Page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header> </header>
+
+
+    <div>@RenderBody()</div>
+
+    <footer class="footer"> 
+        <div class="container" >
+            <div class="row">
+                <div class="footer-col">
+                    
+                    <h4>Finance Business</h4>
+                    <ul>
+                    
+                    <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+                    <div class="social-links"> 
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                </div>
+                </ul>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                <ul>
+                        <li><a href="#">Vivamus ut tellus mi</a></li>
+                        <li><a href="#">Nulla nec cursus elit</a></li>
+                        <li><a href="#">Vulputate sed nec</a></li>
+                        <li><a href="#">Cursus augue hasellus</a></li>
+                        <li><a href="#">Lacinia ac sapien</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Additional Pages</h4>
+                <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How We Work</a></li>
+                        <li><a href="#">Quick Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+               
+                        <input type="text" name="name" placeholder="Full Name" />
+                        <input type="email" name="email" placeholder="E-Mail Address" />
+                        <input type="text" name="text" placeholder="Your Message" />
+                        <button>Send Message</button>
+
+                   
+                </div>
+
+
+                </div>
+        </div>
+
+    </footer>
+
+
+    
+</body>
+</html>

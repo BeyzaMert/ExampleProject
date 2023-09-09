@@ -1,0 +1,69 @@
+<div class="about-us">
+    <div class="container-aboutus">
+        <input type="radio" name="dot" id="one"/>
+        <input type="radio" name="dot" id="two"/>
+        <div class="main-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="image">
+                            <img src="/web/img/aboutus-user.jpg" />
+                                <div class="details">
+                                    <div class="name">John Smith</div>
+                                    <div class="job">Market Specialist</div>
+                                <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="content">
+                            <div class="image">
+                            <img src="/web/img/aboutus-user.jpg" />
+                                <div class="details">
+                                    <div class="name">David Wood</div>
+                                    <div class="job">Chief Accountant</div>
+                                    <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                        <div class="card">
+                            <div class="content">
+                                <div class="image">
+                                    <img src="/web/img/aboutus-user.jpg" />
+                                    <div class="details">
+                                        <div class="name">Andrew Boom</div>
+                                        <div class="job">Marketing Head</div>
+                                        <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                    <div class="content">
+                        <div class="image">
+                            <img src="/web/img/aboutus-user.jpg" />
+                                <div class="details">
+                                            <div class="name">George Walker</div>
+                                    <div class="job">Chief Financial Analyst</div>
+                                            <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                            </div>
+                        </div>
+                    </div>
+          
+                </div>
+                        </div>
+                        <div class="aboutus-button">
+                            <label for="one" class="active one"></label>
+                            <label for="two" class="two"></label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>

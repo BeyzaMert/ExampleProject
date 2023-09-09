@@ -1,0 +1,36 @@
+﻿.logo-slider .slider-inner .logo-slide-img img {
+    cursor: pointer;
+    pointer-events: auto;
+    max-width: 2020px;
+}
+
+.logo-slider .slider-inner .logo-slide-img {
+    height: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.logo-slider {
+    position: absolute;
+ left: 0%;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    pointer-events: none;
+    transition: 0s ease-in;
+}
+
+@media only screen and (max-width:1320px) {
+}

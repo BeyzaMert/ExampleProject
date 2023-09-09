@@ -1,0 +1,139 @@
+﻿
+
+.sub-header {
+    max-width: 2020px;
+    width: 100%;
+    height: 65px;
+    background-color: #a4c639;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+    .sub-header .header-info-one {
+        margin-left: 9%;
+    }
+
+        .sub-header .header-info-one ul {
+            float: left;
+           
+            border-right: 1px solid rgba(250,250,250,0.3);
+            padding: 0px 20px;
+            border-left: 1px solid rgba(250,250,250,0.3);
+        }
+
+    .sub-header .header-info-two ul {
+        height:100px;
+        float: left;
+        border-right: 1px solid rgba(250,250,250,0.3);
+        padding: 0px 20px;
+    }
+
+        .sub-header .header-info-two ul li{
+            margin-top:2%;
+        }
+
+
+        .sub-header .header-info-one li {
+            display: inline-block;
+            color: #fff;
+        }
+
+            .sub-header .header-info-one li span {
+                display: inline-block;
+                /* margin: 0 150px;*/
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .sub-header .header-info-one li i {
+                display: block;
+                font-size: 20px;
+                padding: 1px;
+                margin: 20px 10px;
+                position: relative;
+            }
+
+
+
+    .sub-header .header-info-two {
+        margin-left: -38%;
+
+    }
+
+        .sub-header .header-info-two ul li {
+            margin-top: 23%;
+        }
+
+    .sub-header .header-info-two li {
+        display: inline-block;
+        color: #fff;
+    }
+
+       
+
+
+        .sub-header .header-info-two li span {
+            color: #fff;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .sub-header .header-info-two li i {
+
+            font-size: 20px;
+            margin: 0px 10px;
+/
+        }
+
+
+.sub-header .social-media {
+    margin-right: 9%;
+}
+
+    .sub-header .social-media li {
+        display: inline-block;
+      
+        color: #fff;
+ float: left;
+        width: 40px;
+        margin: 0px;
+        margin-left:-10px;
+        padding-right: 80px;
+        border-left: 1px solid rgba(250,250,250,0.3);
+    }
+
+        .sub-header .social-media li i {
+            left: 15px;
+           
+        }
+
+@media only screen and (max-width:1810px) {
+    .sub-header .header-info-two {
+        margin-left: -30%;
+    }
+}
+
+
+        @media only screen and (max-width:1510px) {
+            .sub-header .header-info-two {
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (max-width:1320px) {
+  
+
+    .sub-header .header-info-two{
+        margin-left:3%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+   .sub-header{
+       display:none;
+   }
+    }
+

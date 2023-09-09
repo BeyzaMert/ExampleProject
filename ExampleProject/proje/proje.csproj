@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder1\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder1\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder1\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder1\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\ContactUs.cshtml" />
+    <Content Remove="Views\Home\Index2.cshtml" />
+    <Content Remove="Views\Home\Index3.cshtml" />
+    <Content Remove="wwwroot\css\asd.cs" />
+    <Content Remove="wwwroot\css\callback.css" />
+    <Content Remove="wwwroot\css\icon-grid.css" />
+    <Content Remove="wwwroot\css\StyleSheet.css" />
+    <Content Remove="wwwroot\css\StyleSheet.scss" />
+    <Content Remove="wwwroot\js\slide.js" />
+    <Content Remove="wwwroot\js\sticky.js" />
+    <Content Remove="wwwroot\web\img\toplanti.jpg" />
+    <Content Remove="wwwroot\web\img\toplantialti.jpg" />
+    <Content Remove="wwwroot\web\img\toplantibes.jpg" />
+    <Content Remove="wwwroot\web\img\toplantidort.jpg" />
+    <Content Remove="wwwroot\web\img\toplantiki.jpg" />
+    <Content Remove="wwwroot\web\img\toplantiuc.jpg" />
+    <Content Remove="wwwroot\web\img\toplantiyedi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>

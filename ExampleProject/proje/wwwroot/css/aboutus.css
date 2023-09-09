@@ -1,0 +1,265 @@
+﻿
+.aboutus {
+    margin-top: 3%;
+    background-color: #f7f7f7;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    max-width: 2020px;
+}
+.boddy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    /*padding: 100px;*/
+    max-width: 2020px;
+}
+
+    .boddy .containerr .cards .card .card__content img {
+        border-radius: 130px;
+        width: 6%;
+        height: 25%;
+        position: absolute;
+       margin-top:3%;
+       margin-left:20%;
+    }
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+.containerr {
+    position: relative;
+   width:200%;
+    height: 400px;
+ overflow: hidden;
+ margin-left:5%
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    grid-gap: 40%;
+    background-color: #f7f7f7;
+    pointer-events: none;
+}
+
+.card__content {
+    background: white;
+    padding: 1rem;
+    justify-content:center;
+}
+
+.card {
+   width:200%;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+
+
+
+.card__content h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card__content h2 {
+    display: flex;
+    justify-content: center;
+    color: #a4c639;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card__content p {
+    justify-content: center;
+    padding: 0.5rem;
+    color: #666666;
+    margin: 20px;
+    font-size: 20px;
+    height: 50%;
+    width: 80%;
+   margin-left:8%;
+}
+
+.card_content img{
+   
+}
+
+.aboutus-text {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top:5%;
+
+}
+
+    .aboutus-text span {
+       margin-left:1% ;
+        color: #a4c639;
+    }
+
+.aboutus-text-two {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    color: #666;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width:1800px) {
+
+    .aboutus-text {
+        font-size: 30px;
+    }
+
+    .aboutus-text-two {
+        font-size: 25px;
+    }
+
+    .card__content h1 {
+        font-size: 25px;
+    }
+
+    .card__content h2 {
+        font-size: 23px;
+    }
+
+    .card__content p {
+        font-size: 19px;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .card {
+        width: 150%;
+    }
+
+      
+
+    .cards {
+        grid-gap: 25%;
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width:1500px) {
+
+    .aboutus-text {
+        font-size: 30px;
+    }
+
+    .aboutus-text-two {
+        font-size: 25px;
+    }
+
+    .card__content h1 {
+        font-size: 25px;
+    }
+
+    .card__content h2 {
+        font-size: 23px;
+    }
+
+    .card__content p {
+        font-size: 19px;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .card {
+        width: 120%;
+    }
+
+    .cards {
+        grid-gap: 25%;
+        width: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width:1320px) {
+
+    .aboutus-text {
+        font-size:30px;
+    }
+
+    .aboutus-text-two {
+        font-size: 25px;
+    }
+
+    .card__content h1{
+        font-size:25px;
+    }
+
+    .card__content h2 {
+        font-size: 23px;
+    }
+
+    .card__content p {
+        font-size: 19px;
+        width:100%;
+        margin-left:2%;
+        
+    }
+
+    .card {
+        width: 120%;
+        
+    }
+
+    .cards {
+        grid-gap: 25%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:1110px) {
+
+    .aboutus-text {
+        font-size: 25px;
+    }
+
+    .aboutus-text-two {
+        font-size: 15px;
+    }
+
+    .card__content h1 {
+        font-size: 20px;
+    }
+
+    .card__content h2 {
+        font-size: 18px;
+    }
+
+    .card__content p {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .card {
+        margin-left:15%;
+        width: 200%;
+    }
+
+    .cards {
+        grid-gap: 55%;
+        width: 100%;
+    }
+
+
+}
